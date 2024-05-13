@@ -1,0 +1,87 @@
+/* HomePage.css */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px; /* Ensure padding around the entire content */
+}
+
+/* HomePage.css */
+.hero-section {
+  display: flex;
+  width: 100%; /* Full width */
+  align-items: stretch; /* Stretches children to fill the container height */
+  justify-content: space-between; /* Maintains space between children */
+  background-color: #ECE9F1; /* Example background color */
+}
+
+/* Flex child settings for equal height */
+.intro-text, .profile-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically within each */
+}
+
+.intro-text {
+  flex: 2; /* Takes up 2/3 of the space if needed, or adjust as per design */
+  padding: 20px; /* Padding for textual content */
+}
+
+.profile-photo {
+  flex: 1; /* Takes up 1/3 of the space */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensures the image is centered */
+}
+
+.profile-photo img {
+  width: 100%; /* Full width of its container */
+  max-width: 300px; /* Limits growth to maintain design */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 30%; /* Circular image */
+}
+.skills-module {
+  width: 100%; /* Full width of the container */
+  padding: 20px; /* Padding around the content */
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 20px; /* Separates from hero section */
+}
+
+.skills-module h2 {
+  margin-top: 0; /* No top margin for the heading */
+}
+
+.skills-module ul {
+  list-style: none; /* No bullets */
+  padding: 0; /* No padding */
+}
+
+.skills-module li {
+  padding: 10px 0; /* Vertical padding */
+  border-bottom: 1px solid #dee2e6; /* Subtle separator */
+}
+
+.skills-module li:last-child {
+  border-bottom: none; /* No border on the last item */
+}
+
+
+/* HomePage.css */
+.intro-text-default {
+  background-color: #f0f0f0; /* Default light gray background */
+}
+
+.profile-photo-default {
+  background-color: #fff; /* Default white background */
+}
+
+.intro-text-custom {
+  background-color: var(--intro-background-color); /* Customizable via a CSS variable */
+}
+
+.profile-photo-custom {
+  background-color: var(--profile-background-color); /* Customizable via a CSS variable */
+}

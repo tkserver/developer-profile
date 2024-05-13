@@ -1,13 +1,32 @@
-body {
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html, #root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  /* background-color: var(--accent-color); Uses light gray from the variable */
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-main-background bg-cover bg-fixed bg-no-repeat bg-center;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgb(140 150 143) !important;
+  transition: background-color 0.3s ease; /* Add this line */
+
+}
+
+.bg-primary:hover {
+  background-color: rgb(187 199 191) !important;
 }

@@ -1,6 +1,65 @@
+/* App.css */
+:root {
+  --primary-color: #5E548E;
+  --secondary-color: #90be6d;
+  --background-color: #F7F7F7; /* Light gray background */
+  --text-color: #434343;
+  --accent-color: #BDB2FF;
+}
+
+
+
+a {
+  color: var(--background-color); /* White text on primary buttons */
+  text-decoration: none!important;
+}
+
+a:hover {
+  /* background-color: var(--accent-color); */
+  background-color: rgb(141 150 143) !important;
+  color: var(--text-color);
+  text-decoration: none!important;
+}
+
+.nav-item.active {
+  /* background-color: var(--accent-color); */
+  background-color: rgb(141 150 143) !important;
+  color: var(--text-color);
+  text-decoration: none!important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--background-color); /* White text on primary buttons */
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* .App {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+} */
+
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure this is set to ensure it takes up the full height */
+  width: 100%;
   text-align: center;
 }
+
+/* Other styles */
 
 .App-logo {
   height: 40vmin;

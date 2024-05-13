@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "./components/common/Footer";
+import HomePage from "./components/HomePage";
+import TechnologiesPage from "./components/TechnologiesPage";
+import ContactPage from "./components/ContactPage";
+import SkillsPage from "./components/SkillsPage";
+import NavbarComponent from "./components/common/Navbar";
 
-function App() {
+import "./App.css";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router basename="developer">
+      <div className="App flex flex-col min-h-screen pb-24">
+        <NavbarComponent />
+        <div className="flex-grow">
+          <Switch>
+            <Route
+              path="/"
+              exact
+              render={() => (
+                <HomePage
+                  introBackgroundColor="var(--secondary-color)"
+                  profileBackgroundColor="var(--primary-color)"
+                />
+              )}
+            />
+            <Route
+              path="/skills"
+              component={SkillsPage}
+              render={() => <SkillsPage />}
+            />
+            <Route path="/contact" component={ContactPage} />
+            <Route
+              path="/technologies"
+              component={TechnologiesPage}
+              render={() => <TechnologiesPage />}
+            />
+          </Switch>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

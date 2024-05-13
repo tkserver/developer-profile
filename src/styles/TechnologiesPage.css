@@ -1,0 +1,14 @@
+.technologies-page {
+  margin: 1rem;
+  background-color: #828282;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technologies-module {
+  margin: 1rem;
+  background-color: #f3f3f3;
+  padding: 15px;
+  flex: 0 1 300px; /* Adjust as needed */
+}
