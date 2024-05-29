@@ -1,0 +1,123 @@
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a.link {
+  color: #606b3e !important;
+  font-weight: 700;
+  text-decoration: underline !important;
+}
+
+.fixed {
+  position: fixed;
+}
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.bg-opacity-75 {
+  background-opacity: 0.75;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.z-50 {
+  z-index: 50;
+}
+.relative {
+  position: relative;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.absolute {
+  position: absolute;
+}
+.top-2 {
+  top: 0.5rem;
+}
+.right-2 {
+  right: 0.5rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.max-w-full {
+  max-width: 100%;
+}
+.max-h-screen {
+  max-height: 100vh;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.image-modal-content {
+  max-height: 80vh; /* Set the maximum height for the image modal */
+  max-width: 80vw;  /* Optionally set a maximum width for better responsiveness */
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem;
+  padding: 2rem;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 4rem; /* Reduced the image height */
+  width: 4rem;  /* Reduced the image width */
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.card .content h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left; /* Left justify the title */
+  color: black; /* Darken the title color */
+}
+
+.card .content p {
+  color: #4a5568;
+  text-align: justify;
+}
+
+.links-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

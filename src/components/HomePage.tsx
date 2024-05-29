@@ -15,14 +15,14 @@ const HomePage: React.FC<HomePageProps> = ({
   profileBackgroundColor = "bg-primary",
 }) => {
   return (
-    <div className="home-page bg-background-color min-h-screen flex flex-col items-center justify-center">
+    <div className="home-page bg-background-color min-h-screen flex flex-col items-center">
       <div className="hero-section flex flex-col md:flex-row md:items-center w-full max-w-8xl p-4">
         <div
           className={`intro-text flex-1 ${introBackgroundColor} p-4 rounded-lg shadow-lg`}
         >
           <h1 className="text-4xl font-bold">Welcome!</h1>
           <p className="mt-2 text-lg">
-            I'm Tony Korologos, a senior software engineer / web developer with over 12 years of
+            I'm Tony Korologos, a senior software engineer / web developer with over 15 years of
             experience. I have a broad range of skills and experience which can be valuable to any project. I love to code and I'm always looking to learn new skills and technologies.
           </p>
         </div>

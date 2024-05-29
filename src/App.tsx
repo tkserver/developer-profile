@@ -5,7 +5,9 @@ import HomePage from "./components/HomePage";
 import TechnologiesPage from "./components/TechnologiesPage";
 import ContactPage from "./components/ContactPage";
 import SkillsPage from "./components/SkillsPage";
+import LinksPage from "./components/LinksPage";
 import NavbarComponent from "./components/common/Navbar";
+import ProjectsPage from "./components/ProjectsPage";
 
 import "./App.css";
 
@@ -29,13 +31,22 @@ const App: React.FC = () => {
             <Route
               path="/skills"
               component={SkillsPage}
-              render={() => <SkillsPage />}
             />
-            <Route path="/contact" component={ContactPage} />
+            <Route
+              path="/contact"
+              component={ContactPage}
+            />
             <Route
               path="/technologies"
               component={TechnologiesPage}
-              render={() => <TechnologiesPage />}
+            />
+            <Route
+              path="/links"
+              component={LinksPage}
+            />
+            <Route
+              path="/projects"
+              component={ProjectsPage}
             />
           </Switch>
         </div>

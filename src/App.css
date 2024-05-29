@@ -7,8 +7,6 @@
   --accent-color: #BDB2FF;
 }
 
-
-
 a {
   color: var(--background-color); /* White text on primary buttons */
   text-decoration: none!important;
@@ -95,3 +93,4 @@ a:hover {
     transform: rotate(360deg);
   }
 }
+

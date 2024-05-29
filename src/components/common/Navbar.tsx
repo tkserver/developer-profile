@@ -24,6 +24,8 @@ const NavbarComponent: React.FC = () => {
                     <NavLink to="/" exact activeClassName="active" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-item">Home</NavLink>
                     <NavLink to="/skills" activeClassName="active" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-item">Skills</NavLink>
                     <NavLink to="/technologies" activeClassName="active" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-item">Technologies</NavLink>
+                    <NavLink to="/links" activeClassName="active" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-item">Links</NavLink>
+                    <NavLink to="/projects" activeClassName="active" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium nav-item">Projects</NavLink>
                     {/* <NavLink to="/contact" activeClassName="active" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</NavLink> */}
                 </div>
             </div>
